@@ -5,16 +5,7 @@
 <br>
 
 <br>
-
-<p align="center">
-  <a href="#clipboard-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-tecnologias-utilizadas">Tecnologias</a>
-</p>
-
-<p align="center">
-  <img alt="mockup" src="./assets/vt/Alurageek.gif" width="100%">
-</p>
-
+G
 </div>
 
 ## :clipboard: Sobre o Projeto
