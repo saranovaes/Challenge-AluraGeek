@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/home/rodape.css">
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <title>Login - AluraGeek</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="cabecalho__principal">
+            <div class="cabecalho__principal__container">
+                <img class="cabecalho__principal__home" src="./assets/img/Cabecalho/Logo.svg" alt="Logo do site AluraGeek" data-home>
+                <input class="cabecalho__pesquisa" type="search" placeholder="O que deseja encontrar?" id="barra-pesquisa">
+            </div>
+        </section>
+    </header>
+
+    <main class="login">
+        <form class="login__formulario" data-enviar>
+            <label class="login__formulario__label" for="login-formulario">Iniciar Sessão</label>
+            <input class="login__formulario__input required" required type="text" autofocus data-email-form placeholder="Escreva seu email">
+            <input class="login__formulario__input required" required type="password" data-senha-form placeholder="Escreva sua senha">
+            <input class="login__formulario__botao botao__azul--light botao__azul--bold" type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <section class="secao__contato">
+            <div class="secao__contato__container">
+                <img src="./assets/img/Cabecalho/Logo.svg" alt="Logo do site AluraGeek">
+                <nav>
+                    <ul class="secao__contato__sobre">
+                        <li><a class="contato__sobre__texto" href="#">Quem somos nós</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Política de privacidade</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Programa fidelidade</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Nossas lojas</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Quero ser franqueado</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <form class="secao__contato__formulario">
+                    <label class="secao__contato__label" for="Nome">Fale Conosco</label>
+                    <input class="secao__contato__nome" type="text" placeholder="Nome">
+                    <textarea class="secao__contato__mensagem" placeholder="Escreva sua mensagem." id="textarea" cols="30" rows="10"></textarea>
+                    <input class="secao__contato__botao botao__azul--light botao__azul--bold" type="submit" value="Enviar mensagem">
+                </form>
+            </div>
+        </section>
+
+        <section class="secao__copyright">
+            <div class="secao__copyright__container">
+                <p class="secao__copyright__texto">Desenvolvido por Sara Novaes <a class="github botao__none" target="_blank" href="https://github.com/saranovaes"></a> 2023</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>

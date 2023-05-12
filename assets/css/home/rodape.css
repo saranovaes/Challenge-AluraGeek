@@ -1,0 +1,162 @@
+.secao__contato {
+    background-color: var(--bg-contato);
+}
+
+.secao__contato__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 8rem;
+}
+
+.secao__contato__container:nth-child(1) {
+    align-items: flex-start;
+}
+
+.secao__contato__sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+}
+
+.contato__sobre__texto {
+    text-decoration: none;
+    color: var(--cinza-texto);
+}
+
+.contato__sobre__texto:hover {
+    color: var(--azul-hover);
+    transition: 100ms all ease-in-out;
+}
+
+.secao__contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.secao__contato__label {
+    font-weight: var(--superbold-texto);
+}
+
+.secao__contato__mensagem {
+    height: 45px;
+    resize: none;
+}
+
+.secao__contato__nome,
+.secao__contato__mensagem {
+    border: none;
+    width: 360px;
+    padding: 13px 8px;
+    border-radius: 4px;
+    outline: none;
+    color: var(--cinza-texto);
+}
+
+.secao__contato__botao {
+    width: 165px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.secao__copyright__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+
+.secao__copyright__texto {
+    width: 280px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.github {
+    text-decoration: none;
+    background-image: url(../../img/github-mark.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding: 5px 6px;
+    border-radius: 5px;
+    padding-left: 25px;
+    color: var(--branco-texto);
+}
+
+@media screen and (max-width: 1024px) {
+    .secao__contato__container {
+        padding: 1rem 2rem;
+    }
+
+    .secao__contato__sobre {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .secao__contato__container {
+        padding: 30px 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secao__contato__container img {
+        margin: 0 auto;
+    }
+
+    .secao__contato__sobre {
+        padding: 10px;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .secao__contato__formulario {
+        padding: 10px;
+    }
+
+
+    .secao__contato__nome,
+    .secao__contato__mensagem {
+        width: 85vw;
+    }
+
+    .secao__contato__botao {
+        padding: 15px;
+    }
+
+    .secao__copyright__container {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+    .secao__contato__nome,
+    .secao__contato__mensagem {
+        width: 80vw;
+    }
+
+    .secao__copyright__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao__contato__formulario:last-child {
+        align-items: center;
+    }
+
+    .github {
+        width: 50vw;
+        padding: 10px;
+        padding-right: 0;
+    }
+}

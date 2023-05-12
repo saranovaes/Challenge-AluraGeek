@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/formulario-produtos/formulario.css">
+    <link rel="stylesheet" href="./assets/css/home/rodape.css">
+    <title>Adicionar produtos - AluraGeek</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="cabecalho__principal">
+            <div class="cabecalho__principal__container">
+                <img class="cabecalho__principal__home" src="./assets/img/Cabecalho/Logo.svg" alt="Logo do site AluraGeek" data-home>
+                <input class="cabecalho__pesquisa" type="search" placeholder="O que deseja encontrar?" id="barra-pesquisa">
+            </div>
+            <input class="cabecalho__login botao__transparente--light botao__transparente--bold" type="submit" value="Menu administrador" data-botao-administrador>
+        </section>
+    </header>
+
+    <main class="formulario">
+        <form class="formulario__produto" data-formulario>
+            <label class="formulario__label">Adicionar novo produto</label>
+            <input class="formulario__input" type="text" autofocus placeholder="URL da imagem" data-url>
+            <select class="formulario__input" data-categoria>
+                <option class="formulario__option" value="Starwars">Starwars</option>
+                <option class="formulario__option" value="Consoles">Consoles</option>
+                <option class="formulario__option" value="Diversos">Diversos</option>
+            </select>
+            <input class="formulario__input" type="text" placeholder="Nome do produto" data-nome>
+            <input class="formulario__input" type="text" placeholder="Preço do produto" data-preco>
+            <textarea class="formulario__textarea" placeholder="Descrição do produto" id="" cols="30" rows="10" data-descricao></textarea>
+            <input class="formulario__botao botao__azul--light botao__azul--bold" type="submit" value="Adicionar produto">
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <section class="secao__contato">
+            <div class="secao__contato__container">
+                <img src="./assets/img/Cabecalho/Logo.svg" alt="Logo do site AluraGeek">
+                <nav>
+                    <ul class="secao__contato__sobre">
+                        <li><a class="contato__sobre__texto" href="#">Quem somos nós</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Política de privacidade</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Programa fidelidade</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Nossas lojas</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Quero ser franqueado</a></li>
+                        <li><a class="contato__sobre__texto" href="#">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+                <form class="secao__contato__formulario">
+                    <label class="secao__contato__label" for="Nome">Fale Conosco</label>
+                    <input class="secao__contato__nome" type="text" placeholder="Nome">
+                    <textarea class="secao__contato__mensagem" placeholder="Escreva sua mensagem." id="textarea" cols="30" rows="10"></textarea>
+                    <input class="secao__contato__botao botao__azul--light botao__azul--bold" type="submit" value="Enviar mensagem">
+                </form>
+            </div>
+        </section>
+
+        <section class="secao__copyright">
+            <div class="secao__copyright__container">
+                <p class="secao__copyright__texto">Desenvolvido por Sara Novaes <a class="github botao__none" target="_blank" href="https://github.com/saranovaes"></a> 2023</p>
+            </div>
+        </section>
+    </footer>
+
+    <script type="module" src="./assets/js/campo-adicionar-produto.js"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+</body>
+</html>

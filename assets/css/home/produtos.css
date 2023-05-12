@@ -1,0 +1,107 @@
+.produtos {
+    background-color: var(--bg-principal);
+}
+
+.produtos__container_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8rem;
+    padding-bottom: 0;
+}
+
+.produtos__link {
+    gap: 12px;
+}
+
+.produtos__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.produtos__conteudo__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 28px;
+}
+
+.produtos__conteudo__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid var(--bg-principal);
+    padding: 10px;
+}
+
+
+.produtos__texto {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: var(--cinza-texto);
+}
+
+.produtos__preco {
+    font-weight: var(--superbold-texto);
+    color: var(--cinza-texto);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.produtos__conteudo__link:hover {
+    opacity: 0.8;
+    background-color: var(--transparente-hover);
+    border: 1px solid var(--azul-hover);
+    border-radius: 4px;
+    transition: 180ms all ease-in-out;
+}
+
+.produtos__conteudo__link:active {
+    transform: scale(0.9);
+    transition: 180ms all ease-in-out;
+}
+
+.produtos__diversos {
+    padding-bottom: 64px;
+}
+
+@media screen and (max-width: 1024px)  {
+    .produtos__container_cabecalho {
+        padding: 1rem 2rem;
+    }
+
+    .produtos__conteudo__container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+    }
+
+    .produtos__conteudo__imagem {
+        width: 160px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .produtos__container_cabecalho {
+        padding: 10px;
+    }
+
+    .produtos__conteudo {
+        gap: 0;
+    }
+    .produtos__conteudo__container {
+        gap: 0;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .produtos__conteudo__imagem {
+        width: 160px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .produtos__conteudo__container {
+        grid-template-columns: 1fr;
+    }
+}

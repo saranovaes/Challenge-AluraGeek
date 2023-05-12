@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+:root {
+    --azul-base: #2A7AE4;
+    --azul-hover: #5595E9;
+    --transparente-hover: #D4E4FA;
+    --bg-contato: #EAF2FD;
+    --branco-texto: #fff;
+    --bg-principal: #F5F5F5;
+    --cinza-texto: #464646;
+    --light-texto: 400;
+    --bold-texto: 600;
+    --superbold-texto: 700;
+    --font-base: 'Raleway', sans-serif;
+}
+
+* {
+    font-family: var(--font-base);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.botao__azul--light {
+    border: none;
+    background-color: var(--azul-base);
+    color: var(--branco-texto);
+    font-size: 16px;
+    font-weight: var(--light-texto);
+    cursor: pointer;
+    transition: 180ms all ease-in-out;
+}
+
+.botao__azul--light:hover {
+    background-color: var(--azul-hover);
+}
+
+.botao__transparente--light {
+    background: none;
+    color: var(--azul-base);
+    font-size: 16px;
+    font-weight: var(--light-texto);
+    border: 1px solid var(--azul-base);
+    cursor: pointer;
+    transition: 180ms all ease-in-out;
+}
+
+.botao__transparente--light:hover {
+    background-color: var(--transparente-hover);
+}
+
+.botao__azul--light:active ,.botao__transparente--light:active {
+    transform: scale(0.9);
+}
+
+.links__azul {
+    text-decoration: none;
+    color: var(--azul-base);
+    font-weight: var(--superbold-texto);
+}
+
+.links__azul:hover {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(60%) saturate(540%) hue-rotate(176deg) brightness(97%) contrast(88%);
+}
+
+.produto__imagem__base { 
+    width: 180px;
+    height: 176px;
+}
